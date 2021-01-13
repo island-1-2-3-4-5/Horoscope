@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		B04FA5AA25AED25C00467873 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04FA5A825AED25C00467873 /* Main.storyboard */; };
 		B04FA5AC25AED25E00467873 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B04FA5AB25AED25E00467873 /* Assets.xcassets */; };
 		B04FA5AF25AED25E00467873 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04FA5AD25AED25E00467873 /* LaunchScreen.storyboard */; };
+		B04FA5C125AEEEBF00467873 /* HoroscopeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FA5C025AEEEBF00467873 /* HoroscopeTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		B04FA5AB25AED25E00467873 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B04FA5AE25AED25E00467873 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B04FA5B025AED25E00467873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B04FA5C025AEEEBF00467873 /* HoroscopeTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoroscopeTabBar.swift; sourceTree = "<group>"; };
 		E8368A92AB0CA6F03638C497 /* Pods_Horoscope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Horoscope.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -48,7 +50,6 @@
 				03ADAF67EB2955A4B8AD9F54 /* Pods-Horoscope.debug.xcconfig */,
 				65953FB615774763845A50D2 /* Pods-Horoscope.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -75,6 +76,7 @@
 			children = (
 				B04FA5A225AED25C00467873 /* AppDelegate.swift */,
 				B04FA5A425AED25C00467873 /* SceneDelegate.swift */,
+				B04FA5C025AEEEBF00467873 /* HoroscopeTabBar.swift */,
 				B04FA5A625AED25C00467873 /* ViewController.swift */,
 				B04FA5A825AED25C00467873 /* Main.storyboard */,
 				B04FA5AB25AED25E00467873 /* Assets.xcassets */,
@@ -208,6 +210,7 @@
 			files = (
 				B04FA5A725AED25C00467873 /* ViewController.swift in Sources */,
 				B04FA5A325AED25C00467873 /* AppDelegate.swift in Sources */,
+				B04FA5C125AEEEBF00467873 /* HoroscopeTabBar.swift in Sources */,
 				B04FA5A525AED25C00467873 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
