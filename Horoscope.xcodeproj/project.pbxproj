@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CF5A6D725B0D40E00C5B477 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF5A6D625B0D40E00C5B477 /* API.swift */; };
+		0CF5A6DB25B0D42500C5B477 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF5A6DA25B0D42500C5B477 /* NetworkDataFetcher.swift */; };
+		0CF5A6DE25B0D43900C5B477 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF5A6DD25B0D43900C5B477 /* NetworkService.swift */; };
+		0CF5A6E125B0D45100C5B477 /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF5A6E025B0D45000C5B477 /* FeedResponse.swift */; };
+		0CF5A6E525B0D47C00C5B477 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF5A6E425B0D47C00C5B477 /* StorageManager.swift */; };
+		0CF5A6E925B0D48F00C5B477 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF5A6E825B0D48F00C5B477 /* Storage.swift */; };
 		890EACCF87C54031DAD4531C /* Pods_Horoscope.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8368A92AB0CA6F03638C497 /* Pods_Horoscope.framework */; };
 		B04FA5A325AED25C00467873 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FA5A225AED25C00467873 /* AppDelegate.swift */; };
 		B04FA5A525AED25C00467873 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FA5A425AED25C00467873 /* SceneDelegate.swift */; };
@@ -19,6 +25,12 @@
 
 /* Begin PBXFileReference section */
 		03ADAF67EB2955A4B8AD9F54 /* Pods-Horoscope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Horoscope.debug.xcconfig"; path = "Target Support Files/Pods-Horoscope/Pods-Horoscope.debug.xcconfig"; sourceTree = "<group>"; };
+		0CF5A6D625B0D40E00C5B477 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		0CF5A6DA25B0D42500C5B477 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		0CF5A6DD25B0D43900C5B477 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		0CF5A6E025B0D45000C5B477 /* FeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResponse.swift; sourceTree = "<group>"; };
+		0CF5A6E425B0D47C00C5B477 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		0CF5A6E825B0D48F00C5B477 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		65953FB615774763845A50D2 /* Pods-Horoscope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Horoscope.release.xcconfig"; path = "Target Support Files/Pods-Horoscope/Pods-Horoscope.release.xcconfig"; sourceTree = "<group>"; };
 		B04FA59F25AED25C00467873 /* Horoscope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Horoscope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04FA5A225AED25C00467873 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +56,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CF5A6D525B0D3F300C5B477 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0CF5A6D625B0D40E00C5B477 /* API.swift */,
+				0CF5A6DA25B0D42500C5B477 /* NetworkDataFetcher.swift */,
+				0CF5A6DD25B0D43900C5B477 /* NetworkService.swift */,
+				0CF5A6E025B0D45000C5B477 /* FeedResponse.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0CF5A6E325B0D46C00C5B477 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0CF5A6E425B0D47C00C5B477 /* StorageManager.swift */,
+				0CF5A6E825B0D48F00C5B477 /* Storage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		10D2FDE86D3C978E5F1A47B0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +110,8 @@
 				B04FA5A425AED25C00467873 /* SceneDelegate.swift */,
 				B04FA5C025AEEEBF00467873 /* HoroscopeTabBar.swift */,
 				B04FA5A625AED25C00467873 /* ViewController.swift */,
+				0CF5A6E325B0D46C00C5B477 /* Models */,
+				0CF5A6D525B0D3F300C5B477 /* Networking */,
 				B04FA5A825AED25C00467873 /* Main.storyboard */,
 				B04FA5AB25AED25E00467873 /* Assets.xcassets */,
 				B04FA5AD25AED25E00467873 /* LaunchScreen.storyboard */,
@@ -208,10 +242,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CF5A6E125B0D45100C5B477 /* FeedResponse.swift in Sources */,
+				0CF5A6DB25B0D42500C5B477 /* NetworkDataFetcher.swift in Sources */,
 				B04FA5A725AED25C00467873 /* ViewController.swift in Sources */,
+				0CF5A6E525B0D47C00C5B477 /* StorageManager.swift in Sources */,
 				B04FA5A325AED25C00467873 /* AppDelegate.swift in Sources */,
 				B04FA5C125AEEEBF00467873 /* HoroscopeTabBar.swift in Sources */,
 				B04FA5A525AED25C00467873 /* SceneDelegate.swift in Sources */,
+				0CF5A6D725B0D40E00C5B477 /* API.swift in Sources */,
+				0CF5A6DE25B0D43900C5B477 /* NetworkService.swift in Sources */,
+				0CF5A6E925B0D48F00C5B477 /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
