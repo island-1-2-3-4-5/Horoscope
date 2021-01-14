@@ -11,31 +11,47 @@ class HoroscopeTabBar: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        presentTutorial()
+        
+        presentTutorial()
+        setUpViews()
 
+        
+        
+    }
+    
+    func setUpViews() {
         let firstViewController = UIViewController()
-        firstViewController.title = "firstViewController"
         firstViewController.view.backgroundColor = UIColor.orange
         firstViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 0)
 
         let secondViewController = UIViewController()
-        secondViewController.title = "secondViewController"
         secondViewController.view.backgroundColor = UIColor.blue
         secondViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
 
         
         let thrirdViewController = UIViewController()
-        thrirdViewController.title = "thrirdViewController"
+        
         thrirdViewController.view.backgroundColor = UIColor.yellow
         thrirdViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 2)
         
         
-        let tabBarList = [firstViewController, secondViewController, thrirdViewController]
+        let fourViewController = UIViewController()
+        fourViewController.view.backgroundColor = UIColor.yellow
+        fourViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .history, tag: 3)
+        
+        
+        let tabBarList = [firstViewController, secondViewController, thrirdViewController, fourViewController]
  
         viewControllers = tabBarList
-        
-        self.selectedIndex = 1
     }
     
-
+    func presentTutorial(){
+        let VC = TutorialViewController()
+        VC.modalPresentationStyle = .overCurrentContext
+        VC.view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)
+        self.present(VC, animated: true, completion: nil)
+    }
 
 }

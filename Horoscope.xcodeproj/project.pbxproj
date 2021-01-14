@@ -13,10 +13,11 @@
 		0CF5A6E125B0D45100C5B477 /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF5A6E025B0D45000C5B477 /* FeedResponse.swift */; };
 		0CF5A6E525B0D47C00C5B477 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF5A6E425B0D47C00C5B477 /* StorageManager.swift */; };
 		0CF5A6E925B0D48F00C5B477 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF5A6E825B0D48F00C5B477 /* Storage.swift */; };
+		0CF5A6F325B0D5B600C5B477 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF5A6F225B0D5B600C5B477 /* Constraints.swift */; };
+		0CF5A6FB25B0D7B700C5B477 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF5A6FA25B0D7B700C5B477 /* TutorialViewController.swift */; };
 		890EACCF87C54031DAD4531C /* Pods_Horoscope.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8368A92AB0CA6F03638C497 /* Pods_Horoscope.framework */; };
 		B04FA5A325AED25C00467873 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FA5A225AED25C00467873 /* AppDelegate.swift */; };
 		B04FA5A525AED25C00467873 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FA5A425AED25C00467873 /* SceneDelegate.swift */; };
-		B04FA5A725AED25C00467873 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FA5A625AED25C00467873 /* ViewController.swift */; };
 		B04FA5AA25AED25C00467873 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04FA5A825AED25C00467873 /* Main.storyboard */; };
 		B04FA5AC25AED25E00467873 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B04FA5AB25AED25E00467873 /* Assets.xcassets */; };
 		B04FA5AF25AED25E00467873 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04FA5AD25AED25E00467873 /* LaunchScreen.storyboard */; };
@@ -31,11 +32,12 @@
 		0CF5A6E025B0D45000C5B477 /* FeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResponse.swift; sourceTree = "<group>"; };
 		0CF5A6E425B0D47C00C5B477 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		0CF5A6E825B0D48F00C5B477 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		0CF5A6F225B0D5B600C5B477 /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		0CF5A6FA25B0D7B700C5B477 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		65953FB615774763845A50D2 /* Pods-Horoscope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Horoscope.release.xcconfig"; path = "Target Support Files/Pods-Horoscope/Pods-Horoscope.release.xcconfig"; sourceTree = "<group>"; };
 		B04FA59F25AED25C00467873 /* Horoscope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Horoscope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04FA5A225AED25C00467873 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B04FA5A425AED25C00467873 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B04FA5A625AED25C00467873 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B04FA5A925AED25C00467873 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B04FA5AB25AED25E00467873 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B04FA5AE25AED25E00467873 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +78,23 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		0CF5A6F125B0D5A800C5B477 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0CF5A6F225B0D5B600C5B477 /* Constraints.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		0CF5A6F625B0D5D000C5B477 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B04FA5C025AEEEBF00467873 /* HoroscopeTabBar.swift */,
+				0CF5A6FA25B0D7B700C5B477 /* TutorialViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		10D2FDE86D3C978E5F1A47B0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,8 +127,8 @@
 			children = (
 				B04FA5A225AED25C00467873 /* AppDelegate.swift */,
 				B04FA5A425AED25C00467873 /* SceneDelegate.swift */,
-				B04FA5C025AEEEBF00467873 /* HoroscopeTabBar.swift */,
-				B04FA5A625AED25C00467873 /* ViewController.swift */,
+				0CF5A6F625B0D5D000C5B477 /* Views */,
+				0CF5A6F125B0D5A800C5B477 /* Tools */,
 				0CF5A6E325B0D46C00C5B477 /* Models */,
 				0CF5A6D525B0D3F300C5B477 /* Networking */,
 				B04FA5A825AED25C00467873 /* Main.storyboard */,
@@ -244,13 +263,14 @@
 			files = (
 				0CF5A6E125B0D45100C5B477 /* FeedResponse.swift in Sources */,
 				0CF5A6DB25B0D42500C5B477 /* NetworkDataFetcher.swift in Sources */,
-				B04FA5A725AED25C00467873 /* ViewController.swift in Sources */,
 				0CF5A6E525B0D47C00C5B477 /* StorageManager.swift in Sources */,
+				0CF5A6F325B0D5B600C5B477 /* Constraints.swift in Sources */,
 				B04FA5A325AED25C00467873 /* AppDelegate.swift in Sources */,
 				B04FA5C125AEEEBF00467873 /* HoroscopeTabBar.swift in Sources */,
 				B04FA5A525AED25C00467873 /* SceneDelegate.swift in Sources */,
 				0CF5A6D725B0D40E00C5B477 /* API.swift in Sources */,
 				0CF5A6DE25B0D43900C5B477 /* NetworkService.swift in Sources */,
+				0CF5A6FB25B0D7B700C5B477 /* TutorialViewController.swift in Sources */,
 				0CF5A6E925B0D48F00C5B477 /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
