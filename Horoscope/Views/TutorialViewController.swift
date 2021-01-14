@@ -19,6 +19,8 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
     let finalPage = 2
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .red
+        
         view.addSubview(scrollView)
         scrollView.fillSuperview()
 
@@ -71,13 +73,26 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
         print("Button tapped1")
         let currentPage = pageControl.currentPage
         if currentPage == finalPage{
-            dismiss(animated: true) {
+            dismiss(animated: true)
+            {
                 guard let navigator = self.navigationController else {return}
-                let appDelegate = UIApplication.shared.delegate as! AppDelegate
-                appDelegate.exitViewController = navigator
-                navigator.pushViewController(HoroscopeTabBar(), animated: false)
+//                let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                let transition = CATransition()
+                    transition.duration = 0.4
+                    transition.type = CATransitionType.moveIn
+                    transition.subtype = CATransitionSubtype.fromTop
+                    transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.default)
+                
+                UIApplication.shared.windows.first?.rootViewController?.view.removeFromSuperview()
+                      UIApplication.shared.windows.first?.rootViewController?.dismiss(animated: false, completion: nil)
+                      UIApplication.shared.windows.first?.layer.add(transition, forKey: kCATransition)
+                      UIApplication.shared.windows.first?.rootViewController = HoroscopeTabBar()
+                      UIApplication.shared.windows.first?.isHidden = false
+                navigator.popToRootViewController(animated: true)
+//                appDelegate.exitViewController = navigator
+//                navigator.pushViewController(HoroscopeTabBar(), animated: false)
             }
-            
+//
         } else {
             scrollToPage(page: pageControl.currentPage + 1, animated: true)
         }
@@ -126,7 +141,7 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
         
         let slide1:Slide = Slide()
 //        slide1.imageView.image = UIImage(named: "regist_image")
-        slide1.labelDescription.text = "Шаг 1 \n Зарегистрируйся в приложении"
+        slide1.set(text: "Проверка")
         slide1.labelDescription.textColor = .white
     
         let slide2:Slide = Slide()

@@ -25,6 +25,9 @@ class Slide: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func set(text: String) {
+        labelDescription.text = text
+    }
     
     
     let imageView: UIImageView = {
@@ -35,6 +38,9 @@ class Slide: UIView {
     
     let labelDescription: UILabel = {
         let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .white
+        label.numberOfLines = 0
         return label
     }()
     

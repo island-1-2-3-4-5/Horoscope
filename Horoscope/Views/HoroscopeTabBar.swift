@@ -21,7 +21,7 @@ class HoroscopeTabBar: UITabBarController {
     }
     
     func setUpViews() {
-        let firstViewController = HoroscopeViewController()
+        let firstViewController = UIViewController()
         firstViewController.view.backgroundColor = UIColor.orange
         firstViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 0)
 
