@@ -12,17 +12,16 @@ class HoroscopeTabBar: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        presentTutorial()
         
-        presentTutorial()
-        setUpViews()
+            self.setUpViews()
 
-        
+//        presentTutorial()
+
         
     }
     
     func setUpViews() {
-        let firstViewController = UIViewController()
+        let firstViewController = HoroscopeViewController()
         firstViewController.view.backgroundColor = UIColor.orange
         firstViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 0)
 
@@ -50,7 +49,7 @@ class HoroscopeTabBar: UITabBarController {
     func presentTutorial(){
         let VC = TutorialViewController()
         VC.modalPresentationStyle = .overCurrentContext
-        VC.view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)
+        VC.view.backgroundColor = .red
         self.present(VC, animated: true, completion: nil)
     }
 

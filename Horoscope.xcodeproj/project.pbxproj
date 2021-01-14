@@ -15,6 +15,8 @@
 		0CF5A6E925B0D48F00C5B477 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF5A6E825B0D48F00C5B477 /* Storage.swift */; };
 		0CF5A6F325B0D5B600C5B477 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF5A6F225B0D5B600C5B477 /* Constraints.swift */; };
 		0CF5A6FB25B0D7B700C5B477 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF5A6FA25B0D7B700C5B477 /* TutorialViewController.swift */; };
+		0CF5A6FE25B0D88200C5B477 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF5A6FD25B0D88200C5B477 /* Slide.swift */; };
+		0CF5A70D25B0E08500C5B477 /* HoroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF5A70C25B0E08500C5B477 /* HoroscopeViewController.swift */; };
 		890EACCF87C54031DAD4531C /* Pods_Horoscope.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8368A92AB0CA6F03638C497 /* Pods_Horoscope.framework */; };
 		B04FA5A325AED25C00467873 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FA5A225AED25C00467873 /* AppDelegate.swift */; };
 		B04FA5A525AED25C00467873 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04FA5A425AED25C00467873 /* SceneDelegate.swift */; };
@@ -34,6 +36,8 @@
 		0CF5A6E825B0D48F00C5B477 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		0CF5A6F225B0D5B600C5B477 /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
 		0CF5A6FA25B0D7B700C5B477 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		0CF5A6FD25B0D88200C5B477 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		0CF5A70C25B0E08500C5B477 /* HoroscopeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeViewController.swift; sourceTree = "<group>"; };
 		65953FB615774763845A50D2 /* Pods-Horoscope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Horoscope.release.xcconfig"; path = "Target Support Files/Pods-Horoscope/Pods-Horoscope.release.xcconfig"; sourceTree = "<group>"; };
 		B04FA59F25AED25C00467873 /* Horoscope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Horoscope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04FA5A225AED25C00467873 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 			children = (
 				B04FA5C025AEEEBF00467873 /* HoroscopeTabBar.swift */,
 				0CF5A6FA25B0D7B700C5B477 /* TutorialViewController.swift */,
+				0CF5A70C25B0E08500C5B477 /* HoroscopeViewController.swift */,
+				0CF5A6FD25B0D88200C5B477 /* Slide.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -264,6 +270,8 @@
 				0CF5A6E125B0D45100C5B477 /* FeedResponse.swift in Sources */,
 				0CF5A6DB25B0D42500C5B477 /* NetworkDataFetcher.swift in Sources */,
 				0CF5A6E525B0D47C00C5B477 /* StorageManager.swift in Sources */,
+				0CF5A70D25B0E08500C5B477 /* HoroscopeViewController.swift in Sources */,
+				0CF5A6FE25B0D88200C5B477 /* Slide.swift in Sources */,
 				0CF5A6F325B0D5B600C5B477 /* Constraints.swift in Sources */,
 				B04FA5A325AED25C00467873 /* AppDelegate.swift in Sources */,
 				B04FA5C125AEEEBF00467873 /* HoroscopeTabBar.swift in Sources */,
